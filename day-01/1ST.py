@@ -1,167 +1,123 @@
-# 🐍 Day 1 — Your 10 Questions
+# Day 1 — 10 Questions.
 
-# 1. Take two numbers and print their sum.
-print("=" * 50)
-print("Question 1: Sum of Two Numbers")
-print("=" * 50)
+import numpy as np 
 
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
+# 1.Take two numbers and print their sum.
+print("sum of two numbers ")
+a = int(input ("Enter the first number :"))
+b = int(input("Enter the second number:"))
 
-sum_result = a + b
-print(f"The sum of {a} and {b} is: {sum_result}")
+sum = a +b
+print ("the sum of two numbers is :",sum)
 
 
-# 2. Take two numbers and print their difference.
-print("\n" + "=" * 50)
-print("Question 2: Difference of Two Numbers")
-print("=" * 50)
-
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
+# 2.Take two numbers and print their difference.
+print("difference of two numbers ")
+a = int(input ("Enter the first number :"))
+b = int(input("Enter the second number:"))
 
 diff = a - b
-print(f"The difference of {a} and {b} is: {diff}")
+print ("the difference of two numbers is :",diff)
+
+ 
+# 3.Take two numbers and print their multiplication.
+print("multiplication of two numbers")
+a = int(input ("Enter the first number :"))
+b = int(input("Enter the second number:"))
+
+multi = a**b
+print ("the multiplication of two numbers is :",multi)
 
 
-# 3. Take two numbers and print their multiplication.
-print("\n" + "=" * 50)
-print("Question 3: Multiplication of Two Numbers")
-print("=" * 50)
+# 4.Take two numbers and print their division.
+print("division of two numbers")
 
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
+a = int(input ("Enter the first number :"))
+b = int(input("Enter the second number:"))
 
-product = a * b
-print(f"The product of {a} and {b} is: {product}")
+div = a/b
+print ("the division of two numbers is :",div)
 
 
-# 4. Take two numbers and print their division.
-print("\n" + "=" * 50)
-print("Question 4: Division of Two Numbers")
-print("=" * 50)
+# 5.Take a number and check whether it is even or odd.
+print("checking whether the number is even or odd")
 
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
+a = int(input ("Enter the first number :"))
+b = int(input("Enter the second number:"))
 
-if b == 0:
-    print("Error: Cannot divide by zero!")
+if a%2==0:
+    print("the number is even")
 else:
-    division = a / b
-    print(f"The division of {a} by {b} is: {division}")
+    print("the number is odd")
 
+# 6.Take a person's age and check whether they are 18 or older.
+print("checking the age of a person whether they are 18 or older")
 
-# 5. Take a number and check whether it is even or odd.
-print("\n" + "=" * 50)
-print("Question 5: Check Even or Odd")
-print("=" * 50)
+a = int(input ("Enter the age of yours according to your governmentdocumentations :"))
 
-num = int(input("Enter a number: "))
-
-if num % 2 == 0:
-    print(f"{num} is Even")
+if a>=18:
+    print("You are eligible to vote ")
 else:
-    print(f"{num} is Odd")
+    print("You are not eligible to vote under 18 years of age ")
 
+# 7.Take three numbers and find the largest.
+print("finding the largest no among 3 numbers ")
 
-# 6. Take a person's age and check whether they are 18 or older.
-print("\n" + "=" * 50)
-print("Question 6: Check if Adult (18+)")
-print("=" * 50)
+a = int(input ("Enter the first number :"))
+b = int(input("Enter the second number:"))
+c = int(input("Enter the third number:"))
 
-age = int(input("Enter your age: "))
-
-if age >= 18:
-    print(f"You are {age} years old. You are an adult!")
+if a>=b and a>=c:
+    print("the largest number is :",a)
+elif b>=a and b>=c:
+    print("the largest number is :",b)
 else:
-    print(f"You are {age} years old. You are a minor.")
+    print("the largest number is :",c)
+
+# 8.Take a number and calculate its square and cube.
+print("calculating the square and cube of a number:")
+
+a = int(input ("Enter the number :"))
+
+sq=a**2
+cb=a**3
+
+print("the square of the number is :",sq)
+print("the cube of the number is :",cb)
+
+# 9.Take a student's marks and print their percentage for 5 subjects.
+print("calculating the percentage of a student for 5 subjects")
+
+a = int(input ("Enter the first subject marks :"))
+b = int(input ("Enter the second subject marks :"))
+c = int(input ("Enter the third subject marks :"))
+d = int(input ("Enter the forth subject marks :"))
+e = int(input ("Enter the fifth subject marks :"))
+
+marks= a+b+c+d+e
+per=(marks/500)*100
+print("the percentage of the student is :",per)
+
+# 10.Create a simple calculator that takes two numbers and an operator (+, -, *, /) and performs the operation.
+print("simple calculator")
+
+a = int(input ("Enter the first number :"))
+b = int(input("Enter the second number:"))
+
+oper = input("Enter the operator (+, -, *, /): ")
+
+if oper =="+":
+    result = a+b
+    print("the result of addition is :",result)
+elif oper =="-":
+    result = a-b
+    print("the result of subtraction is :",result)
+elif oper =="*":
+    result = a*b
+    print("the result of mutiplication is :",result)
+elif oper =="/":
+    result = a/b
+    print("the result of division is :",result)
 
 
-# 7. Take three numbers and find the largest.
-print("\n" + "=" * 50)
-print("Question 7: Find Largest of Three Numbers")
-print("=" * 50)
 
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-num3 = int(input("Enter third number: "))
-
-largest = max(num1, num2, num3)
-print(f"The largest among {num1}, {num2}, and {num3} is: {largest}")
-
-
-# 8. Take a number and calculate its square and cube.
-print("\n" + "=" * 50)
-print("Question 8: Calculate Square and Cube")
-print("=" * 50)
-
-num = int(input("Enter a number: "))
-
-square = num ** 2
-cube = num ** 3
-
-print(f"Square of {num} is: {square}")
-print(f"Cube of {num} is: {cube}")
-
-
-# 9. Take a student's marks and print their percentage for 5 subjects.
-print("\n" + "=" * 50)
-print("Question 9: Calculate Student's Percentage")
-print("=" * 50)
-
-subject1 = int(input("Enter marks for Subject 1: "))
-subject2 = int(input("Enter marks for Subject 2: "))
-subject3 = int(input("Enter marks for Subject 3: "))
-subject4 = int(input("Enter marks for Subject 4: "))
-subject5 = int(input("Enter marks for Subject 5: "))
-
-total_marks = subject1 + subject2 + subject3 + subject4 + subject5
-percentage = (total_marks / 500) * 100
-
-print(f"\nTotal Marks: {total_marks}/500")
-print(f"Percentage: {percentage}%")
-
-if percentage >= 90:
-    grade = "A+"
-elif percentage >= 80:
-    grade = "A"
-elif percentage >= 70:
-    grade = "B"
-elif percentage >= 60:
-    grade = "C"
-else:
-    grade = "D"
-
-print(f"Grade: {grade}")
-
-
-# 10. Create a simple calculator that takes two numbers and an operator (+, -, *, /) and performs the operation.
-print("\n" + "=" * 50)
-print("Question 10: Simple Calculator")
-print("=" * 50)
-
-num1 = float(input("Enter first number: "))
-operator = input("Enter operator (+, -, *, /): ")
-num2 = float(input("Enter second number: "))
-
-if operator == "+":
-    result = num1 + num2
-    print(f"{num1} + {num2} = {result}")
-elif operator == "-":
-    result = num1 - num2
-    print(f"{num1} - {num2} = {result}")
-elif operator == "*":
-    result = num1 * num2
-    print(f"{num1} * {num2} = {result}")
-elif operator == "/":
-    if num2 == 0:
-        print("Error: Cannot divide by zero!")
-    else:
-        result = num1 / num2
-        print(f"{num1} / {num2} = {result}")
-else:
-    print("Invalid operator! Please use +, -, *, or /")
-
-print("\n" + "=" * 50)
-print("✅ All 10 Questions Completed!")
-print("=" * 50)
